@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App By Gulnoza</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">
+          <img
+            src="https://todo-app-google.netlify.app/img/calendar-icon.svg"
+            alt=""
+          />
+          <h1>Today</h1>
+        </div>
+        <div class="sort">
+          <button class="btn_sort">
+            <img
+              src="https://todo-app-google.netlify.app/img/menu-icon.svg"
+              alt=""
+            />
+          </button>
+          <ul class="menu_sort">
+            <li class="completedLI">Completed</li>
+            <li class="inProgressLI">In Progress</li>
+            <li class="removedLI">Removed</li>
+            <li class="all">All</li>
+          </ul>
+        </div>
+      </header>
+
+      <main>
+        <ul class="todos"></ul>
+
+        <button class="btn_add">
+          <img
+            src="https://todo-app-google.netlify.app/img/plus-icon.svg"
+            alt=""
+          />
+          <span>Create New Item</span>
+        </button>
+      </main>
+    </div>
+
+    <div class="modal_container none">
+      <div class="modal_content">
+        <input type="text" placeholder="To Do text" class="input" />
+        <div class="btns">
+          <button class="create">Create</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
